@@ -12,7 +12,7 @@
 		9A48D19F2045F9A1003F4C38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A48D19D2045F9A1003F4C38 /* Main.storyboard */; };
 		9A48D1A12045F9A1003F4C38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A48D1A02045F9A1003F4C38 /* Assets.xcassets */; };
 		9A48D1A42045F9A1003F4C38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A48D1A22045F9A1003F4C38 /* LaunchScreen.storyboard */; };
-		9A48D1AF2045F9A1003F4C38 /* CanadaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A48D1AE2045F9A1003F4C38 /* CanadaTests.swift */; };
+		9A48D1AF2045F9A1003F4C38 /* CanadaAsyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A48D1AE2045F9A1003F4C38 /* CanadaAsyncTests.swift */; };
 		9A48D1BA2045F9A1003F4C38 /* CanadaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A48D1B92045F9A1003F4C38 /* CanadaUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +42,7 @@
 		9A48D1A32045F9A1003F4C38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A48D1A52045F9A1003F4C38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A48D1AA2045F9A1003F4C38 /* CanadaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanadaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A48D1AE2045F9A1003F4C38 /* CanadaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaTests.swift; sourceTree = "<group>"; };
+		9A48D1AE2045F9A1003F4C38 /* CanadaAsyncTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaAsyncTests.swift; sourceTree = "<group>"; };
 		9A48D1B02045F9A1003F4C38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A48D1B52045F9A1003F4C38 /* CanadaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanadaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A48D1B92045F9A1003F4C38 /* CanadaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaUITests.swift; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				9A48D1982045F9A0003F4C38 /* Canada */,
-				9A48D1AD2045F9A1003F4C38 /* CanadaTests */,
+				9A48D1AD2045F9A1003F4C38 /* CanadaAsyncTests */,
 				9A48D1B82045F9A1003F4C38 /* CanadaUITests */,
 				9A48D1972045F9A0003F4C38 /* Products */,
 			);
@@ -97,23 +97,21 @@
 		9A48D1982045F9A0003F4C38 /* Canada */ = {
 			isa = PBXGroup;
 			children = (
-				9A48D1992045F9A0003F4C38 /* AppDelegate.swift */,
-				9A48D19B2045F9A0003F4C38 /* ViewController.swift */,
-				9A48D19D2045F9A1003F4C38 /* Main.storyboard */,
-				9A48D1A02045F9A1003F4C38 /* Assets.xcassets */,
-				9A48D1A22045F9A1003F4C38 /* LaunchScreen.storyboard */,
-				9A48D1A52045F9A1003F4C38 /* Info.plist */,
+				9A48D1C72045FB3E003F4C38 /* AppDelegate */,
+				9A48D1C82045FB52003F4C38 /* Controllers */,
+				9A48D1C92045FB8E003F4C38 /* Views */,
+				9A48D1CA2045FB9F003F4C38 /* SupportingFiles */,
 			);
 			path = Canada;
 			sourceTree = "<group>";
 		};
-		9A48D1AD2045F9A1003F4C38 /* CanadaTests */ = {
+		9A48D1AD2045F9A1003F4C38 /* CanadaAsyncTests */ = {
 			isa = PBXGroup;
 			children = (
-				9A48D1AE2045F9A1003F4C38 /* CanadaTests.swift */,
+				9A48D1AE2045F9A1003F4C38 /* CanadaAsyncTests.swift */,
 				9A48D1B02045F9A1003F4C38 /* Info.plist */,
 			);
-			path = CanadaTests;
+			path = CanadaAsyncTests;
 			sourceTree = "<group>";
 		};
 		9A48D1B82045F9A1003F4C38 /* CanadaUITests */ = {
@@ -123,6 +121,40 @@
 				9A48D1BB2045F9A1003F4C38 /* Info.plist */,
 			);
 			path = CanadaUITests;
+			sourceTree = "<group>";
+		};
+		9A48D1C72045FB3E003F4C38 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9A48D1992045F9A0003F4C38 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		9A48D1C82045FB52003F4C38 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9A48D19B2045F9A0003F4C38 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9A48D1C92045FB8E003F4C38 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9A48D19D2045F9A1003F4C38 /* Main.storyboard */,
+				9A48D1A22045F9A1003F4C38 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9A48D1CA2045FB9F003F4C38 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				9A48D1A02045F9A1003F4C38 /* Assets.xcassets */,
+				9A48D1A52045F9A1003F4C38 /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A48D1AF2045F9A1003F4C38 /* CanadaTests.swift in Sources */,
+				9A48D1AF2045F9A1003F4C38 /* CanadaAsyncTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
